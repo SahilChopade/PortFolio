@@ -1,12 +1,17 @@
 import "./App.css";
-import Navbar from "./Sections/Navbar";
 import TitlePage from "./Pages/TitlePage";
-
+import About from "./Sections/About";
+import Experience from "./Sections/Experience";
+import Works from "./Sections/Works";
+import Footer from "./Sections/Footer";
 function App() {
   return (
-    <div className="min-h-screen text-white p-[30px] font-['Merriweather']">
-      <Navbar />
+    <div className="text-white p-[20px] font-['Merriweather']">
       <TitlePage />
+      <About />
+      <Experience />
+      <Works />
+      {/* <Footer /> */}
     </div>
   );
 }

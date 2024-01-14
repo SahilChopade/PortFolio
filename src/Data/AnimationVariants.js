@@ -17,6 +17,14 @@ export const item = {
     opacity: 1,
   },
 };
+export const typing = {
+  hidden: { y: 20, scale: 0, opacity: 0 },
+  visible: {
+    y: 0,
+    scale: 1,
+    opacity: 1,
+  },
+};
 export const general = {
   initial: {
     opacity: 0,
@@ -29,6 +37,35 @@ export const general = {
     scale: 1,
     transition: {
       duration: 0.5,
+    },
+  },
+};
+
+export const paratext = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+export const bounce = {
+  hidden: {
+    y: -20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 300,
     },
   },
 };
