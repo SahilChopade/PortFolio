@@ -12,7 +12,7 @@ export default function Experience() {
       <div className="flex flex-col items-start justify-between">
         <TitleText text="Experience" />
       </div>
-      <div className="flex gap-[4rem] mt-[1rem] p-[1rem]">
+      <div className="flex gap-[4rem] mt-[3rem] p-[1rem]">
         <motion.div
           variants={paratext}
           initial="initial"

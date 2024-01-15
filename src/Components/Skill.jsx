@@ -7,7 +7,7 @@ export default function Skill({ skill }) {
     <motion.div
       variants={container}
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
       className="flex gap-2 items-center justify-between p-[10px]"
     >
       <motion.div variants={item}>

@@ -21,7 +21,7 @@ export default function Name() {
           },
         }}
         variants={container}
-        animate="visible"
+        whileInView="visible"
         initial="hidden"
         className="flex text-[5.5rem] text-[#0acbe0] font-extrabold drop-shadow-[8px_8px_1px_#000] gap-1"
       >

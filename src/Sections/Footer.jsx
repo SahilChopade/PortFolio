@@ -1,10 +1,17 @@
 import React from "react";
 import FooterIcons from "../Components/FooterIcons";
+import { motion } from "framer-motion";
+import { container } from "../Data/AnimationVariants";
 
 export default function Footer() {
   return (
-    <div className="px-[20px] flex gap-2 items-center relative">
-      <div className="flex gap-2">
+    <div className="flex items-center mt-[2rem]">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        className="flex gap-[1rem]"
+      >
         <FooterIcons name="github" link="http://www.github.com/SahilChopade" />
         <FooterIcons
           name="instagram"
@@ -15,7 +22,7 @@ export default function Footer() {
           link="https://www.linkedin.com/in/sahil-chopade-7504bb227/"
         />
         <FooterIcons name="mail" link="mailto:chopadesahil2002@gmail.com" />
-      </div>
+      </motion.div>
     </div>
   );
 }
