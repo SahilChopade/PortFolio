@@ -1,23 +1,27 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
+import { containerMovingText, movingText } from "../Data/AnimationVariants";
 
 export default function TitleText({ text }) {
+  const arr = text.split("");
   return (
     <motion.div
-      initial={{
-        scale: 3,
-        opacity: 0,
-      }}
-      whileInView={{
-        scale: 1,
-        opacity: 1,
-        transition: {
-          duration: 1,
-        },
-      }}
-      className="hover:tracking-[0.3rem] transition-all duration-500 uppercase first-letter:mr-[3px] first-letter:text-[#0acbe0] first-letter:text-[4rem] first-letter:font-bold text-[2.5rem] font-semibold tracking-wider drop-shadow-[4px_4px_6px_#000]"
+      variants={containerMovingText}
+      initial="hidden"
+      whileInView="visible"
+      className="flex hover:tracking-[0.3rem] transition-all duration-500 uppercase [&>*:first-child]:mr-[3px] [&>*:first-child]:text-[#0acbe0] [&>*:first-child]:text-[4rem] [&>*:first-child]:font-bold text-[2.5rem] font-semibold tracking-wider drop-shadow-[4px_4px_6px_#000] w-fit"
     >
-      {text}
+      {arr.map((char) => {
+        return char === " " ? (
+          <motion.p variants={movingText} className="m-auto">
+            &nbsp;
+          </motion.p>
+        ) : (
+          <motion.p variants={movingText} className="m-auto">
+            {char}
+          </motion.p>
+        );
+      })}
     </motion.div>
   );
 }

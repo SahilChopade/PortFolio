@@ -69,3 +69,47 @@ export const bounce = {
     },
   },
 };
+export const containerMovingText = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.2,
+      staggerChildren: 0.2,
+    },
+  },
+};
+export const movingText = {
+  hidden: {
+    x: 50,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      damping: 30,
+      stiffness: 500,
+    },
+  },
+};
+export const coding = {
+  hidden: {
+    y: 50,
+    scale: 0,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.2,
+      type: "spring",
+      damping: 30,
+      stiffness: 500,
+    },
+  },
+};

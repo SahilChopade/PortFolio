@@ -19,8 +19,10 @@ export default function Contact() {
             whileInView="animate"
             className="text-[1.5rem]"
           >
-            <strong>Greetings! </strong> Thanks for exploring my portfolio.
-            <strong>Eager to connect</strong> with fellow tech enthusiasts!
+            <strong>Greetings! </strong>
+            <br />
+            <br /> Thanks for exploring my portfolio.
+            <strong> Eager to connect</strong> with fellow tech enthusiasts!
             Whether you're pondering a project, seeking collaboration, or just
             curious, <strong>I'm all ears</strong>.
           </motion.div>
