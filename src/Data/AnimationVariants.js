@@ -75,6 +75,17 @@ export const containerMovingText = {
     opacity: 1,
     scale: 1,
     transition: {
+      delayChildren: 0.1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+export const skillMovingText = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
       delayChildren: 0.2,
       staggerChildren: 0.2,
     },

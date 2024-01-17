@@ -3,11 +3,11 @@ import MainImage from "../Assets/MainImage.gif";
 import { motion } from "framer-motion";
 import { general, paratext } from "../Data/AnimationVariants";
 import Name from "../Components/Name";
-import Navbar from "../Sections/Navbar";
-import TypingText from "../Components/TypingText";
+import Navbar from "./Navbar";
+import SkillAnimation from "../Components/SkillAnimation";
 export default function TitlePage() {
   return (
-    <div className="h-screen">
+    <div className="h-screen snap-start">
       <Navbar />
       <div className="flex flex-col gap-[1rem] p-[20px]">
         <div className="flex items-center justify-center gap-[10rem]">
@@ -32,7 +32,6 @@ export default function TitlePage() {
           </div>
           <div>
             <Name />
-            {/* <TypingText textString="Software Developer" /> */}
           </div>
         </div>
         <div className="flex items-center justify-center">

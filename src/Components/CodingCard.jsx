@@ -18,6 +18,7 @@ export default function CodingCard({ name, rating, problems, image, link }) {
           stiffness: 300,
         },
       }}
+      whileTap={{ scale: 0.8 }}
       className="codingCard flex p-[1rem] gap-[1.5rem] cursor-pointer"
     >
       <div className="flex items-center justify-center">

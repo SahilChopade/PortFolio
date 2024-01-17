@@ -4,11 +4,10 @@ import Skill from "../Components/Skill";
 import { Skills } from "../Data/data";
 import SkillGif from "../Assets/SkillGif.gif";
 import { motion } from "framer-motion";
-import { paratext } from "../Data/AnimationVariants";
-
+import { bounce, paratext } from "../Data/AnimationVariants";
 export default function About() {
   return (
-    <div className="flex flex-col items-start justify-around h-screen p-[20px] border-[1px] border-white rounded-[20px] my-[1rem]">
+    <div className="flex flex-col items-start justify-around h-screen p-[20px] border-[1px] border-white rounded-[20px] my-[1rem] snap-start">
       <div className="flex flex-col gap-3 items-start">
         <TitleText text="About Me" />
         <motion.div
@@ -41,9 +40,20 @@ export default function About() {
             })}
           </div>
         </div>
-        <div>
+        <motion.div
+          initial={{ x: 200, scale: 0, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            scale: 1,
+            transition: {
+              duration: 0.5,
+              type: "keyframes",
+            },
+          }}
+        >
           <img className="w-[25rem]" src={SkillGif} alt="SkillGif" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

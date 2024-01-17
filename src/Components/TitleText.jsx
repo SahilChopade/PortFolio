@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React from "react";
 import { containerMovingText, movingText } from "../Data/AnimationVariants";
 
 export default function TitleText({ text }) {

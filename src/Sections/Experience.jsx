@@ -4,7 +4,7 @@ import CreatorCube from "../Assets/CreatorCube.png";
 import SuperNova from "../Assets/SuperNova.png";
 import Bullets from "../Components/Bullets";
 import { motion } from "framer-motion";
-import { paratext } from "../Data/AnimationVariants";
+import { containerMovingText, item, paratext } from "../Data/AnimationVariants";
 
 export default function Experience() {
   return (
@@ -14,12 +14,12 @@ export default function Experience() {
       </div>
       <div className="flex gap-[4rem] mt-[3rem] p-[1rem]">
         <motion.div
-          variants={paratext}
-          initial="initial"
-          animate="animate"
+          variants={containerMovingText}
+          initial="hidden"
+          whileInView="visible"
           className="flex flex-col gap-[2rem] p-[1rem] border-[2px] shadow-[inset_3px_3px_5px_#fff] border-[#fff] rounded-[20px]"
         >
-          <div className="flex items-center gap-[1rem]">
+          <motion.div variants={item} className="flex items-center gap-[1rem]">
             <img className="w-[3rem]" src={CreatorCube} alt="Creator Cube" />
             <div>
               <div className="text-[1.3rem] uppercase">Creator Cube</div>
@@ -27,7 +27,7 @@ export default function Experience() {
                 FrontEnd Developer Engineer Intern
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className="flex flex-col gap-2 ml-[2rem]">
             <Bullets
               text="Obtained a increase in 95% user satisfaction by implementing the
@@ -47,12 +47,12 @@ export default function Experience() {
           </div>
         </motion.div>
         <motion.div
-          variants={paratext}
-          initial="initial"
-          animate="animate"
+          variants={containerMovingText}
+          initial="hidden"
+          whileInView="visible"
           className="flex flex-col gap-[1rem] p-[1rem] border-[2px] shadow-[inset_3px_3px_5px_#fff] border-[#fff] rounded-[20px]"
         >
-          <div className="flex items-start gap-[1rem]">
+          <motion.div variants={item} className="flex items-start gap-[1rem]">
             <img className="w-[3rem]" src={SuperNova} alt="Super Nova" />
             <div>
               <div className="text-[1.3rem] uppercase">
@@ -66,7 +66,7 @@ export default function Experience() {
                 website.
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className="flex flex-col gap-2 ml-[2rem]">
             <Bullets
               text="Engineered, tested, and successfully deployed a user-centric website enabling seamless purchases of game servers, enabling
