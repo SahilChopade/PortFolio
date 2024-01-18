@@ -36,7 +36,7 @@ export default function TitlePage() {
           <motion.button
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1LlnKL9VU2Qng-FlUTJ06i0TuyVmS7sY9/view?usp=sharing"
+                "https://drive.google.com/file/d/1s-0NxmBiYkXCAGb5VF7wTvP1W9XzztgG/view?usp=sharing"
               )
             }
             whileTap={{ scale: 0.85 }}
