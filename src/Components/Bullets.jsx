@@ -4,7 +4,7 @@ import { item } from "../Data/AnimationVariants";
 
 export default function Bullets({ text }) {
   return (
-    <motion.div variants={item} className="flex items-start gap-2">
+    <motion.div variants={item} className="flex items-start gap-2 text-[0.5rem] sm:text-[1rem]">
       <img
         className="mt-[5px] w-[20px] h-[20px]"
         src="/BulletPoint.png"

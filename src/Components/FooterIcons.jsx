@@ -16,7 +16,7 @@ export default function FooterIcons({ name, link }) {
       <a href={link} target="_blank" rel="noreferrer">
         <img
           data-tooltip-id={name}
-          className="w-[2.5rem]"
+          className="w-[2rem] sm:w-[2.5rem]"
           src={`/social/${name}.svg`}
           alt={name}
         />

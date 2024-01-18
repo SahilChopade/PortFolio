@@ -19,7 +19,7 @@ export default function Skill({ skill }) {
       </motion.div>
       <motion.div
         variants={item}
-        className="text-[#f5f5f5] text-[1.2rem] font-semibold tracking-wider uppercase"
+        className="text-[#f5f5f5] text-[0.8rem] md:text-[1.2rem] font-semibold tracking-wider uppercase"
       >
         {skill.name}
       </motion.div>

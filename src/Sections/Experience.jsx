@@ -4,15 +4,15 @@ import CreatorCube from "../Assets/CreatorCube.png";
 import SuperNova from "../Assets/SuperNova.png";
 import Bullets from "../Components/Bullets";
 import { motion } from "framer-motion";
-import { containerMovingText, item, paratext } from "../Data/AnimationVariants";
+import { containerMovingText, item } from "../Data/AnimationVariants";
 
 export default function Experience() {
   return (
-    <div className="h-screen p-[20px] border-[1px] border-white rounded-[20px] my-[1rem]">
+    <div id="Experience" className="p-[20px] border-[1px] border-white rounded-[20px] my-[1rem] min-h-screen max-h-fit">
       <div className="flex flex-col items-start justify-between">
         <TitleText text="Experience" />
       </div>
-      <div className="flex gap-[4rem] mt-[3rem] p-[1rem]">
+      <div className="flex flex-col md:flex-row gap-[2rem] sm:gap-[4rem] mt-[3rem] p-[1rem]">
         <motion.div
           variants={containerMovingText}
           initial="hidden"
@@ -22,8 +22,10 @@ export default function Experience() {
           <motion.div variants={item} className="flex items-center gap-[1rem]">
             <img className="w-[3rem]" src={CreatorCube} alt="Creator Cube" />
             <div>
-              <div className="text-[1.3rem] uppercase">Creator Cube</div>
-              <div className="text-[0.9rem] opacity-[0.8] text-[#f5f5f5]">
+              <div className="text-[0.8rem] sm:text-[1.3rem] uppercase">
+                Creator Cube
+              </div>
+              <div className="text-[0.6rem] sm:text-[0.9rem] opacity-[0.8] text-[#f5f5f5]">
                 FrontEnd Developer Engineer Intern
               </div>
             </div>
@@ -55,13 +57,13 @@ export default function Experience() {
           <motion.div variants={item} className="flex items-start gap-[1rem]">
             <img className="w-[3rem]" src={SuperNova} alt="Super Nova" />
             <div>
-              <div className="text-[1.3rem] uppercase">
+              <div className="text-[0.8rem] sm:text-[1.3rem] uppercase">
                 Super Nova Developers
               </div>
-              <div className="text-[0.9rem] opacity-[0.8] text-[#f5f5f5]">
+              <div className="text-[0.6rem] sm:text-[0.9rem]  opacity-[0.8] text-[#f5f5f5]">
                 FullStack Development Engineer Intern
               </div>
-              <div className="text-[0.9rem] opacity-[0.8] text-[#f5f5f5]">
+              <div className="text-[0.6rem] sm:text-[0.9rem] opacity-[0.8] text-[#f5f5f5]">
                 Worked Under a working Professional for his game server Selling
                 website.
               </div>

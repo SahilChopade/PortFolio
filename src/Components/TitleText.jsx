@@ -9,7 +9,7 @@ export default function TitleText({ text }) {
       variants={containerMovingText}
       initial="hidden"
       whileInView="visible"
-      className="flex hover:tracking-[0.3rem] transition-all duration-500 uppercase [&>*:first-child]:mr-[3px] [&>*:first-child]:text-[#0acbe0] [&>*:first-child]:text-[4rem] [&>*:first-child]:font-bold text-[2.5rem] font-semibold tracking-wider drop-shadow-[4px_4px_6px_#000] w-fit"
+      className="flex hover:tracking-[0.3rem] transition-all duration-500 uppercase [&>*:first-child]:mr-[3px] [&>*:first-child]:text-[#0acbe0] [&>*:first-child]:text-[4rem] [&>*:first-child]:font-bold text-[1.5rem] md:text-[2.5rem] font-semibold tracking-wider drop-shadow-[4px_4px_6px_#000] w-fit"
     >
       {arr.map((char) => {
         return char === " " ? (

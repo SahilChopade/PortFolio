@@ -29,10 +29,7 @@ strong {
   -webkit-text-stroke: 1px;
 }
 .codingCard {
-  width: 20rem;
-  height: 8rem;
   background: rgb(223, 225, 235);
-  border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,

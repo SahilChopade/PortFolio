@@ -9,7 +9,7 @@ import { container } from "../Data/AnimationVariants";
 
 export default function Works() {
   return (
-    <div className="h-screen p-[20px] border-[1px] border-white rounded-[20px] my-[1rem]">
+    <div id="Works" className="min-h-screen max-h-fit p-[20px] border-[1px] border-white rounded-[20px] my-[1rem]">
       <div className="flex flex-col items-start justify-between">
         <TitleText text="Works" />
       </div>
@@ -17,7 +17,7 @@ export default function Works() {
         variants={container}
         initial="hidden"
         whileInView="visible"
-        className="flex items-center justify-center gap-[4rem] mt-[2rem]"
+        className="flex flex-col md:flex-row items-center justify-center gap-[4rem] mt-[2rem]"
       >
         <Card
           image={Shareify}

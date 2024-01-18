@@ -9,7 +9,7 @@ export default function Name() {
         variants={paratext}
         initial="initial"
         animate="animate"
-        className="text-[4.5rem] font-semibold drop-shadow-[8px_8px_1px_#000] fill-none stroke-slate-500 stroke-1"
+        className="text-[2.5rem] md:text-[4.5rem] font-semibold drop-shadow-[8px_8px_1px_#000] fill-none stroke-slate-500 stroke-1"
       >
         SAHIL
       </motion.div>
@@ -23,7 +23,7 @@ export default function Name() {
         variants={container}
         whileInView="visible"
         initial="hidden"
-        className="flex text-[5.5rem] text-[#0acbe0] font-extrabold drop-shadow-[8px_8px_1px_#000] gap-1"
+        className="flex text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] text-[#0acbe0] font-extrabold drop-shadow-[8px_8px_1px_#000] gap-1"
       >
         <motion.div whileHover={{ scale: 1.12 }} variants={bounce}>
           C
