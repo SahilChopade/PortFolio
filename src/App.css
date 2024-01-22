@@ -1,8 +1,12 @@
 body {
-  background: url("./Assets/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(0, 5, 33);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 5, 33, 1) 0%,
+    rgba(4, 12, 34, 1) 31%,
+    rgba(6, 59, 85, 1) 100%,
+    rgba(36, 123, 167, 1) 100%
+  );
 }
 ::-webkit-scrollbar {
   width: 5px;

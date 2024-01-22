@@ -10,14 +10,14 @@ export default function TitlePage() {
     <div id="TitlePage" className="">
       <Navbar />
       <div className="flex flex-col gap-[1rem] p-[20px] min-h-screen max-h-fit">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-[3rem] md:gap-[10rem]">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-[3rem] md:gap-[10rem] mt-0 md:mt-[3rem]">
           <Name />
-          <div className="w-[20rem] md:w-[30rem] flex flex-col">
+          <div className="w-full md:w-[25rem] flex flex-col justify-center items-center">
             <motion.img
               variants={general}
               initial="initial"
               animate="animate"
-              className="drop-shadow-[2px_2px_10px_#000]"
+              className="hidden lg:flex w-[20rem] md:w-[20rem] drop-shadow-[2px_2px_10px_#000]"
               src={MainImage}
               alt="MainImage"
             />
@@ -25,14 +25,14 @@ export default function TitlePage() {
               variants={paratext}
               whileInView="animate"
               initial="initial"
-              className="text-[0.9rem] md:text-[1.5rem] text-center"
+              className="text-[0.9rem] md:text-[1.1rem] text-center"
             >
               Welcome to my digital space, where every pixel tells a story.
               Explore my portfolio and discover the art of innovation.
             </motion.div>
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center mt-[1rem]">
           <motion.button
             onClick={() =>
               window.open(

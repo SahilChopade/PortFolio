@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavHead from "../Components/NavHead";
 import { AnimatePresence, motion } from "framer-motion";
 import { container } from "../Data/AnimationVariants";
@@ -8,6 +8,14 @@ import HamOpen from "../Assets/HamOpenButton.png";
 import HamClosed from "../Assets/HamClosedButton.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    let handler = (e) => {
+      if (e.target) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+  });
   return (
     <div className="flex justify-between items-center flex-wrap relative">
       <div>

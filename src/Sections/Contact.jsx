@@ -1,7 +1,7 @@
 import React from "react";
 import TitleText from "../Components/TitleText";
 import Footer from "./Footer";
-import Hello from "../Assets/Hello.gif";
+import Hello from "../Assets/Hello.png";
 import { motion } from "framer-motion";
 import { paratext } from "../Data/AnimationVariants";
 
