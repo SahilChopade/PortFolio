@@ -16,6 +16,7 @@ export default function Experience() {
         <motion.div
           variants={containerMovingText}
           initial="hidden"
+          viewport={{ once: true }}
           whileInView="visible"
           className="flex flex-col gap-[2rem] p-[1rem] border-[2px] shadow-[inset_3px_3px_5px_#fff] border-[#fff] rounded-[20px]"
         >
@@ -52,6 +53,7 @@ export default function Experience() {
           variants={containerMovingText}
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true }}
           className="flex flex-col gap-[1rem] p-[1rem] border-[2px] shadow-[inset_3px_3px_5px_#fff] border-[#fff] rounded-[20px]"
         >
           <motion.div variants={item} className="flex items-start gap-[1rem]">

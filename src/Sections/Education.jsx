@@ -7,7 +7,7 @@ export default function Education() {
   return (
     <div className=" flex flex-col items-center">
       <TitleText text="Education" />
-      <motion.div variants={container} initial="hidden" whileInView="visible">
+      <motion.div variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         <motion.div
           variants={coding}
           whileHover={{

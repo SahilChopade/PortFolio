@@ -10,6 +10,7 @@ export default function SkillAnimation() {
       variants={skillMovingText}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       className="flex text-[2.5rem] font-semibold tracking-wider drop-shadow-[4px_4px_6px_#000] w-fit mt-[2rem]"
     >
       {textArray.map((char) => {

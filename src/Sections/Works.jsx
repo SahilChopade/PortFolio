@@ -17,6 +17,7 @@ export default function Works() {
         variants={container}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
         className="flex flex-col md:flex-row items-center justify-center gap-[4rem] mt-[2rem]"
       >
         <Card

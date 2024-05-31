@@ -14,6 +14,7 @@ export default function Programming() {
         variants={container}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
         className="flex flex-col justify-center items-center gap-[0.8rem] md:gap-[1.5rem] mt-[1rem] md:mt-[3rem]"
       >
         <CodingCard

@@ -15,6 +15,7 @@ export default function Name() {
           variants={profilepic}
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true }}
           className="w-[15rem] sm:w-[20rem] aspect-square object-cover object-center border-[3px] border-[#fff] rounded-[100%] shadow-[10px_10px_50px_#063b55,-10px_-10px_50px_#063b55,10px_-10px_50px_#063b55,-10px_10px_50px_#063b55]"
           src={MyPic}
           alt="MyPic"
@@ -38,6 +39,8 @@ export default function Name() {
           }}
           variants={container}
           whileInView="visible"
+          viewport={{ once: true }}
+          
           initial="hidden"
           className="flex text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] text-[#0acbe0] font-extrabold drop-shadow-[8px_8px_1px_#000] gap-1"
         >

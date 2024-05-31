@@ -17,6 +17,7 @@ export default function Contact() {
             variants={paratext}
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             className="text-[1rem] sm:text-[1.5rem]"
           >
             <strong>Greetings! </strong>
@@ -46,6 +47,7 @@ export default function Contact() {
                 stiffness: 200,
               },
             }}
+            viewport={{ once: true }}
             className="w-full drop-shadow-[2px_2px_10px_#0093E9]"
             src={Hello}
             alt="Hello"

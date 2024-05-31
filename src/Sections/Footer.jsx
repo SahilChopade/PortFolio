@@ -10,6 +10,7 @@ export default function Footer() {
         variants={container}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
         className="flex gap-[1rem]"
       >
         <FooterIcons name="github" link="http://www.github.com/SahilChopade" />

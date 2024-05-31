@@ -14,6 +14,7 @@ export default function About() {
           variants={paratext}
           initial="initial"
           whileInView="animate"
+          viewport={{ once: true }}
           className="text-[0.8rem] md:text-[1.2rem]"
         >
           "I am a final-year B.Tech student at <strong>IIT Dhanbad</strong>,
@@ -52,6 +53,7 @@ export default function About() {
               type: "keyframes",
             },
           }}
+          viewport={{ once: true }}
         >
           <img className="w-[25vw]" src={SkillGif} alt="SkillGif" />
         </motion.div>

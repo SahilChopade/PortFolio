@@ -24,6 +24,7 @@ export default function TitlePage() {
             <motion.div
               variants={paratext}
               whileInView="animate"
+              viewport={{ once: true }}
               initial="initial"
               className="text-[0.9rem] md:text-[1.1rem] text-center"
             >
