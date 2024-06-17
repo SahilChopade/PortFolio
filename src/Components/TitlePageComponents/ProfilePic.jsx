@@ -5,14 +5,14 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 export default function ProfilePic() {
   return (
     <div className="flex flex-col items-center">
-      <div className="rainbowgradient rounded-[50%] p-[5px] z-10 shadow-[2px_2px    _3px_#fff,3px_3px_3px_#fff]">
+      <div className="bg-white rounded-[50%] p-[5px] z-10 profilegrad">
         <img
           className="w-[20vw] object-cover aspect-square rounded-[50%]"
           src={MyPic}
           alt="DP"
         />
       </div>
-      <div className="relative bottom-[15vh] pt-[18vh] w-[40vw] h-[50vh] titlecardcolor rounded-[30px] text-center">
+      <div className="relative bottom-[15vh] pt-[18vh] w-[40vw] h-[50vh] bg-blue-900 rounded-[30px] text-center">
         <h2 className="text-[2rem] spicy">
           Welcome to my digital space, where every pixel tells a story. Explore
           my portfolio and discover the art of innovation.
@@ -22,7 +22,7 @@ export default function ProfilePic() {
             DOWNLOAD MY CV
           </button>
           <div className="flex gap-[1rem]">
-            <div>
+            <div className="hover:scale-[1.25] transition-all duration-500 ease-in-out">
               <a
                 href="https://www.linkedin.com/in/sahil-chopade-7504bb227/"
                 target="_blank"
@@ -31,7 +31,7 @@ export default function ProfilePic() {
                 <FaLinkedin size={45} />
               </a>
             </div>
-            <div>
+            <div className="hover:scale-[1.25] transition-all duration-500 ease-in-out">
               <a
                 href="https://github.com/SahilChopade"
                 target="_blank"
@@ -40,7 +40,7 @@ export default function ProfilePic() {
                 <FaGithub size={45} />
               </a>
             </div>
-            <div>
+            <div className="hover:scale-[1.25] transition-all duration-500 ease-in-out">
               <a
                 href="mailto:chopadesahil2002@gmail.com"
                 target="_blank"

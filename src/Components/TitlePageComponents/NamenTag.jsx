@@ -4,7 +4,7 @@ import SkillsTag from "./SkillsTag";
 
 const NamenTag = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-[1rem]">
       <ProfileName />
       <SkillsTag />
     </div>
