@@ -1,10 +1,10 @@
 import React from "react";
-import MyPic from "../../Assets/ProfilePic.jpg";
+import MyPic from "../Assets/ProfilePic.jpg";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function ProfilePic() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-[45vw]">
       <div className="bg-white rounded-[50%] p-[5px] z-10 profilegrad">
         <img
           className="w-[20vw] object-cover aspect-square rounded-[50%]"

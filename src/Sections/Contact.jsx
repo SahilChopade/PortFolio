@@ -7,7 +7,7 @@ import { paratext } from "../Data/AnimationVariants";
 
 export default function Contact() {
   return (
-    <div id="Contact" className="min-h-screen max-h-fit p-[20px] border-[1px] border-white rounded-[20px] my-[1rem]">
+    <div id="Contact" className="">
       <div className="flex flex-col items-start justify-between">
         <TitleText text="Contact Me" />
       </div>
