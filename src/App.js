@@ -3,7 +3,6 @@ import Experience from "./Sections/Experience";
 import Works from "./Sections/Works";
 import Contact from "./Sections/Contact";
 import ProfilePic from "./Sections/ProfilePic";
-import Navbar from "./Sections/Navbar";
 import NamenTag from "./Sections/NamenTag";
 import About from "./Sections/About";
 import Skills from "./Sections/Skills";
@@ -18,8 +17,8 @@ function App() {
         <About />
         <Skills />
         <Experience />
-          {/* <Works />
-          <Contact /> */}
+        <Works />
+        <Contact />
       </div>
     </div>
   );
