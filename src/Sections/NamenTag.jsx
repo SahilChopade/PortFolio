@@ -1,6 +1,6 @@
 import React from "react";
-import ProfileName from "../Components/NamenTagComp/ProfileName";
-import SkillsTag from "../Components/NamenTagComp/SkillsTag";
+import ProfileName from "../Components/ProfileName";
+import SkillsTag from "../Components/SkillsTag";
 
 const NamenTag = () => {
   return (

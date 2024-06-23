@@ -8,11 +8,11 @@ import About from "./Sections/About";
 import Skills from "./Sections/Skills";
 function App() {
   return (
-    <div className="flex justify-center relative text-white font-['Merriweather'] p-[3rem]">
-      <div className="fixed left-0 top-[15%] w-[45vw]">
+    <div className="flex justify-center pt-[8rem] relative text-white font-['Merriweather'] p-[3rem]">
+      <div className="w-[45vw] fixed left-0">
         <ProfilePic />
       </div>
-      <div className="right-0 top-[10rem] absolute w-[55vw] mr-[1rem] flex flex-col gap-[3rem]">
+      <div className="w-[55vw] absolute right-0 mr-[1rem] flex flex-col gap-[3rem]">
         <NamenTag />
         <About />
         <Skills />
