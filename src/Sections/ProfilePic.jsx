@@ -18,7 +18,7 @@ export default function ProfilePic() {
           my portfolio and discover the art of innovation.
         </h2>
         <div className="flex justify-center gap-[3rem] mt-[2.5rem]">
-          <button className="px-[20px] rounded-[15px] bg-slate-800 text-[1.2rem] font-semibold">
+          <button onClick={()=>{window.open("https://drive.google.com/file/d/1AzsQOfXRlloMgXClt08sGOMN345vpgME/view?usp=sharing")}} className="px-[20px] rounded-[15px] bg-slate-800 text-[1.2rem] font-semibold">
             DOWNLOAD MY CV
           </button>
           <div className="flex gap-[1rem]">
