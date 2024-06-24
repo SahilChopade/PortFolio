@@ -16,7 +16,8 @@ const SkillsTag = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '5rem', fontWeight: '900' ,display: 'inline-block',color: "blue" }}
+      className='text-[2rem] md:text-[5rem]'
+      style={{ fontWeight: '900' ,display: 'inline-block',color: "blue" }}
       repeat={Infinity}
     />
     </div>
