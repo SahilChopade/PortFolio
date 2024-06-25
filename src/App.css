@@ -86,3 +86,8 @@ input,textarea{
 input:focus,textarea:focus{
   border: 3px solid blue;
 }
+
+/* SLICK CSS */
+.slick-slide > div{
+  margin: 0 10px;
+}
