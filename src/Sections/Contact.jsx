@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { ToastContainer, Zoom, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BoxHeadline from "../Components/BoxHeadline";
 
 export default function Contact() {
   const [data, setData] = useState({
@@ -34,7 +35,7 @@ export default function Contact() {
   };
   return (
     <div className="flex flex-col gap-[0.5rem] shadow-[5px_5px_10px_#191919,-5px_-5px_10px_#3C3C3C] rounded-[1rem] p-[2rem] mb-[5rem]">
-      <div className="text-[2.5rem]">Contact</div>
+      <BoxHeadline name="Contact" />
       <ToastContainer
         position="bottom-left"
         autoClose={2998}
@@ -49,8 +50,8 @@ export default function Contact() {
         transition={Zoom}
       />
       <hr />
-      <div className="flex items-center justify-center gap-[3rem]">
-        <div className="flex flex-col justify-center gap-[0.5rem] w-[30vw] text-[1.2rem] mt-[1rem]">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-[3rem]">
+        <div className="flex flex-col justify-center gap-[0.5rem] w-[80vw] md:w-[30vw] text-[1.2rem] mt-[1rem]">
           <label>Name</label>
           <input
             onChange={handleClick}
@@ -87,13 +88,13 @@ export default function Contact() {
             name="Message"
           ></textarea>
           <input
-            className="w-[10vw] p-[0.5rem] hover:bg-blue-500 transition-all hover:text-black rounded-lg text-[1.5rem] mt-[0.5rem] text-blue-500 cursor-pointer"
+            className="w-full md:w-[10vw] p-[0.5rem] hover:bg-blue-500 transition-all hover:text-black rounded-lg text-[1.5rem] mt-[0.5rem] text-blue-500 cursor-pointer"
             onClick={handleSubmit}
             type="submit"
             value="Send Message"
           />
         </div>
-        <div class="bg-black shadow-[2px_2px_5px_#9C9C9C,-5px_-5px_10px_#081530] w-[15vw] h-[25rem] text-[1.4rem] rounded-lg">
+        <div class="bg-black shadow-[2px_2px_5px_#9C9C9C,-5px_-5px_10px_#081530] w-[70vw] md:w-[15vw] h-[25rem] text-[1.4rem] rounded-lg">
           <div class="flex p-2 gap-1">
             <div class="">
               <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
