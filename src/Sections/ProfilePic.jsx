@@ -7,13 +7,13 @@ export default function ProfilePic() {
     <div className="flex flex-col items-center">
       <div className="bg-white rounded-[50%] p-[5px] z-10 profilegrad">
         <img
-          className="w-[50vw] md:w-[20vw] object-cover aspect-square rounded-[50%]"
+          className="w-[15rem] md:w-[22rem] object-cover aspect-square rounded-[50%]"
           src={MyPic}
           alt="DP"
         />
       </div>
-      <div className="relative bottom-[12vh] md:bottom-[15vh] pt-[13vh] md:pt-[18vh] w-[100vw] md:w-[40vw] h-[30vh] md:h-[50vh] bg-blue-900 rounded-[30px] text-center p-[1rem]">
-        <h2 className="text-[1.2rem] md:text-[2rem] spicy">
+      <div className="relative bottom-[12vh] md:bottom-[15vh] pt-[13vh] md:pt-[18vh] w-[100vw] md:w-[40vw] pb-[2rem] bg-blue-900 rounded-[30px] text-center p-[1rem]">
+        <h2 className="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] lg:text-[2rem] spicy">
           Welcome to my digital space, where every pixel tells a story. Explore
           my portfolio and discover the art of innovation.
         </h2>

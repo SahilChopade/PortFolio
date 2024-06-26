@@ -89,5 +89,5 @@ input:focus,textarea:focus{
 
 /* SLICK CSS */
 .slick-slide > div{
-  margin: 0 10px;
+  margin: 0 1rem;
 }

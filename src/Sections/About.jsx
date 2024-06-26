@@ -6,7 +6,7 @@ const About = () => {
     <div className="flex flex-col gap-[0.5rem] shadow-[5px_5px_10px_#191919,-5px_-5px_10px_#3C3C3C] rounded-[1rem] p-[2rem]">
       <BoxHeadline name="About Me" />
       <hr />
-      <div className="text-[1rem] md:text-[1.1rem] text-justify mt-[1rem]">
+      <div className="text-[1rem] md:text-[1.2rem] lg:text-[1.4rem] text-wrap text-justify mt-[1rem]">
         "I am a B.Tech Graduate from <strong>IIT Dhanbad</strong>,
         proficient in both
         <strong>FullStack Web Development</strong> &

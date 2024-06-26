@@ -15,6 +15,7 @@ export const Development = [
   { name: "MYSQL" },
   { name: "Tailwind CSS" },
   { name: "Linux" },
+  { name: "AWS" },
 ];
 export const Projects = [
   {

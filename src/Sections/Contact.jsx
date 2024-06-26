@@ -94,7 +94,7 @@ export default function Contact() {
             value="Send Message"
           />
         </div>
-        <div class="bg-black shadow-[2px_2px_5px_#9C9C9C,-5px_-5px_10px_#081530] w-[70vw] md:w-[15vw] h-[25rem] text-[1.4rem] rounded-lg">
+        <div class="bg-black shadow-[2px_2px_5px_#9C9C9C,-5px_-5px_10px_#081530] w-[70vw] md:w-[15vw] pl-[0.5rem] pt-[0.5rem] pr-[2rem] pb-[2rem]  text-[1rem] md:text-[1.2rem] lg:text-[1.4rem] rounded-lg">
           <div class="flex p-2 gap-1">
             <div class="">
               <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
@@ -106,7 +106,7 @@ export default function Contact() {
               <span class="bg-green-500 box inline-block center w-3 h-3 rounded-full"></span>
             </div>
           </div>
-          <div class="px-[1.5rem]">
+          <div class="px-[1.5rem] text-wrap">
             Thanks for exploring my portfolio.
             <strong className="text-blue-600">Eager to connect</strong> with
             fellow tech enthusiasts! Whether you're pondering a project, seeking
