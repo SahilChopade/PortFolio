@@ -12,7 +12,7 @@ export default function ProfilePic() {
           alt="DP"
         />
       </div>
-      <div className="relative bottom-[12vh] md:bottom-[15vh] pt-[13vh] md:pt-[18vh] w-[100vw] md:w-[40vw] pb-[2rem] bg-blue-900 rounded-[30px] text-center p-[1rem]">
+      <div className="relative bottom-[12vh] md:bottom-[15vh] pt-[13vh] md:pt-[18vh] w-full lg:w-[40vw] pb-[2rem] bg-blue-900 rounded-[30px] text-center p-[1rem]">
         <h2 className="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] lg:text-[2rem] spicy">
           Welcome to my digital space, where every pixel tells a story. Explore
           my portfolio and discover the art of innovation.

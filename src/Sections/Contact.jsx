@@ -12,7 +12,10 @@ export default function Contact() {
     Message: "",
   });
   const handleSubmit = async () => {
-    const res = await axios.post("https://mailer-4th7.onrender.com/sendmail", data);
+    const res = await axios.post(
+      "https://mailer-4th7.onrender.com/sendmail",
+      data
+    );
     const options = {
       position: "bottom-left",
       autoClose: 2998,
@@ -50,10 +53,11 @@ export default function Contact() {
         transition={Zoom}
       />
       <hr />
-      <div className="flex flex-col md:flex-row items-center justify-center gap-[3rem]">
-        <div className="flex flex-col justify-center gap-[0.5rem] w-[80vw] md:w-[30vw] text-[1.2rem] mt-[1rem]">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-[3rem]">
+        <div className="flex flex-col justify-center gap-[0.5rem] w-[80vw] lg:w-[30vw] text-[1.2rem] mt-[1rem]">
           <label>Name</label>
           <input
+            autoComplete="off"
             onChange={handleClick}
             className="p-[0.5rem] rounded-md text-white bg-[#081530] placeholder:text-blue-500"
             type="text"
@@ -63,6 +67,7 @@ export default function Contact() {
           />
           <label>Email</label>
           <input
+            autoComplete="off"
             className="p-[0.5rem] rounded-md text-white bg-[#081530] placeholder:text-blue-500"
             onChange={handleClick}
             type="email"
@@ -72,6 +77,7 @@ export default function Contact() {
           />
           <label>Subject</label>
           <input
+            autoComplete="off"
             className="p-[0.5rem] rounded-md text-white bg-[#081530] placeholder:text-blue-500"
             onChange={handleClick}
             type="subject"
@@ -81,6 +87,7 @@ export default function Contact() {
           />
           <label>Enter Your Message</label>
           <textarea
+            autoComplete="off"
             className="p-[0.5rem] rounded-md text-white bg-[#081530] resize-none min-h-[20vh] placeholder:text-blue-500"
             onChange={handleClick}
             placeholder="Enter Your Message"
@@ -88,13 +95,13 @@ export default function Contact() {
             name="Message"
           ></textarea>
           <input
-            className="w-full md:w-[10vw] p-[0.5rem] hover:bg-blue-500 transition-all hover:text-black rounded-lg text-[1.5rem] mt-[0.5rem] text-blue-500 cursor-pointer"
+            className="w-full lg:w-[10vw] p-[0.5rem] hover:bg-blue-500 transition-all hover:text-black rounded-lg text-[1.5rem] mt-[0.5rem] text-blue-500 cursor-pointer"
             onClick={handleSubmit}
             type="submit"
             value="Send Message"
           />
         </div>
-        <div class="bg-black shadow-[2px_2px_5px_#9C9C9C,-5px_-5px_10px_#081530] w-[70vw] md:w-[15vw] pl-[0.5rem] pt-[0.5rem] pr-[2rem] pb-[2rem]  text-[1rem] md:text-[1.2rem] lg:text-[1.4rem] rounded-lg">
+        <div class="bg-black shadow-[2px_2px_5px_#9C9C9C,-5px_-5px_10px_#081530] w-[70vw] lg:w-[15vw] pl-[0.5rem] pt-[0.5rem] pr-[2rem] pb-[2rem]  text-[1rem] md:text-[1.2rem] lg:text-[1.4rem] rounded-lg">
           <div class="flex p-2 gap-1">
             <div class="">
               <span class="bg-red-500 inline-block center w-3 h-3 rounded-full"></span>
